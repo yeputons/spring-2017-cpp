@@ -3,7 +3,12 @@
 
 using std::set;
 
+// Можно написать свой greater.
 struct my_greater {
+  // Притворяемся функцией, чтобы можно было писать так:
+  //     my_greater something;
+  //     bool x = something(1, 2);
+  // Структура с оператором () называется "функтор".
   bool operator()(int a, int b) {
     return a > b;
   }

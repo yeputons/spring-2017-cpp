@@ -5,6 +5,7 @@ using std::set;
 
 class my_greater {
  public:
+  // Так как функтор - структура, то он может иметь состояние.
   my_greater(int change_bits) : change_bits_(change_bits) {}
 
   bool operator()(int a, int b) {

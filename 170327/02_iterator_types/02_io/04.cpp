@@ -11,6 +11,8 @@ int main() {
   std::back_insert_iterator<std::vector<int>> data_inserter(data);
   std::copy(in_it, end_of_stream, data_inserter);
 
+  std::reverse(data.begin(), data.end());
+
   std::ostream_iterator<int> out_it(std::cout, ", ");
   std::copy(data.begin(), data.end(), out_it);
   
