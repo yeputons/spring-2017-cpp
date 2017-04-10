@@ -15,8 +15,11 @@ int main() {
   std::cout << max(a, a + 3) << "\n"; 
   std::cout << max(a, a + sizeof(a) / sizeof(a[0])) << "\n"; 
   std::cout << max(std::begin(a), std::end(a)) << "\n";  // C++11
+
   std::cout << max(b.begin(), b.end()) << "\n";
+
   std::cout << max(std::begin(c), std::end(c)) << "\n";
+  
   std::cout << max(d.begin(), d.end()) << "\n";
   return 0;
 }
