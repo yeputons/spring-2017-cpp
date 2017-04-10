@@ -38,5 +38,10 @@ int main() {
   nat_iterator start(5);
   nat_iterator stop(10);
   std::cout << std::count(start, stop, 6) << '\n';
+
+  std::vector<int> v(nat_iterator(5), nat_iterator(20));
+  for (int x : v) {  // C++11
+    std::cout << "x=" << x << "\n";
+  }
   return 0;
 }

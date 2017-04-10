@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iterator>
+#include <vector>
 
 class nat_iterator {
  public:
