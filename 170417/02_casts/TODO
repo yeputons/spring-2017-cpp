@@ -1,0 +1,11 @@
+Why casts: unified syntax (see lexical_cast), easier to grep, ugly (reason to avoid)
+static_cast: typically (don't) use this
+const_cast: operator[]const or similar (but do not modify consts), C interfaces
+
+RTTI: polymorphic classes only (at least one virtual function).
+typeid/type_info (opaque)
+dynamic_cast: use virtual functions; example: split array into several
+
+explicit constructor
+mutable field: mutex
+
