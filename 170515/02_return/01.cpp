@@ -14,7 +14,7 @@ int main() {
   DemoClass b = foo(20);
 
   std::cout << "----- a = foo(30) -----\n";
-  a = foo(20);
+  a = foo(30);
 
   std::cout << "----- exit -----\n";
   return 0;
