@@ -11,6 +11,15 @@ class nat_iterator : public std::iterator<std::random_access_iterator_tag, int> 
     return value_;
   }
 
+  nat_iterator& operator+=(int x) {
+    value_ += x;
+    return *this;
+  }
+
+  std::ptrdiff_t operator-(const nat_iterator &other) {
+    return value_ - other.value_;
+  }
+
   nat_iterator& operator++() {
     value_++;
     return *this;

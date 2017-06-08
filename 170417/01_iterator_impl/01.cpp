@@ -24,7 +24,7 @@ int main() {
   nat_iterator it(5);
   std::cout << *it << ' ';
   std::cout << *(++it) << ' ';
-  // std::cout << *(it++) << ' ';
+  std::cout << *(it++) << ' ';
   std::cout << *it << '\n';
   return 0;
 }

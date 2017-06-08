@@ -39,5 +39,6 @@ int main() {
   nat_iterator stop(10);
   nat_iterator it = lower_bound(start, stop, 7);
   std::cout << *it << '\n';
+  std::cout << (it == nat_iterator(7)) << '\n';
   return 0;
 }
